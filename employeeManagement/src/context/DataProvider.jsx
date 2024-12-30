@@ -291,15 +291,8 @@ const DataProvider = ({ children }) => {
     const storedDetails = localStorage.getItem("allData");
     return storedDetails ? JSON.parse(storedDetails) : allUser;
   });
-
   useEffect(() => {
-    if (users) {
-      localStorage.setItem("allData", users);
-    } else {
-      localStorage.removeItem("allData");
-    }
-  }, [users]);
-  useEffect(() => {
+    console.log("users has changed");
     if (users) {
       localStorage.setItem("allData", JSON.stringify(users));
     } else {

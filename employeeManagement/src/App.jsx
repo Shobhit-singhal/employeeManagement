@@ -4,16 +4,10 @@ import AdminDashboard from "./components/AdminDashboard";
 import Login from "./components/Login";
 import UserDashboard from "./components/UserDashboard";
 import { useUserContext } from "./context/UserProvider";
+import Exp from "./components/exp";
 
 function App() {
   const {user,userDetails}=useUserContext();
-  // useEffect(() => {
-  //   console.log(user);
-  // }, [user]);
-  // useEffect(() => {
-  //   console.log("userDetails",userDetails);
-  // }, [userDetails]);
-
   if (user === "") {
     return (
       <div className="h-full w-full flex justify-center items-center">
@@ -33,6 +27,7 @@ function App() {
       </div>
     );
   }
+  // return(<Exp/>)
 }
 
 export default App;

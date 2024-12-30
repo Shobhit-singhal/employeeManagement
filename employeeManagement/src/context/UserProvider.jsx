@@ -23,7 +23,7 @@ const UserProvider = ({ children }) => {
   useEffect(() => {
     if (userDetails) {
       if (users) {
-        console.log("user details has changed so: old:", userDetails);
+        // console.log("user details has changed so: old:", userDetails);
         let Id = userDetails.id;
         const updatedUser = users.find((user) => user.id === userDetails.id);
 

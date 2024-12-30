@@ -8,7 +8,6 @@ const Login = () => {
   const [pass, setPass] = useState("");
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("checked:",checkCredentials(email,pass));
     let data=checkCredentials(email,pass);
     if(data){
       setUser(data.role)
