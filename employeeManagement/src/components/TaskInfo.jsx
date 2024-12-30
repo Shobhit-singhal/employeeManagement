@@ -12,14 +12,16 @@ const TaskInfo = (props) => {
       onClick={handleClick}
       style={{ background: getColor(props.task.state) }}
     >
-      <div className="flex w-full ">
-        <p>{props.task.to}</p>
-        <p className="flex-grow flex justify-center ">{props.task.title}</p>
-        <div className="flex gap-3">
-          <p className="border-2 px-2 py-0.5 text-black bg-gray-400 rounded-md">
+      <div className="flex w-full justify-between ">
+        <div className="flex flex-col md:flex-row justify-center items-center w-2/3 p-2 ">
+          <p className="text-indigo-600">{props.task.to}</p>
+          <p className="flex-grow flex justify-center ">{props.task.title}</p>
+        </div>
+        <div className="flex flex-col items-end md:flex-row md:justify-end gap-3 h-fit w-1/3 ">
+          <p className="border-2 px-1 w-fit text-black text-sm text-center bg-gray-400 rounded-md">
             {props.task.category}
           </p>
-          <p className="border-2 px-2 py-0.5 text-black bg-gray-400 rounded-md">
+          <p className="border-2 px-1 w-fit text-black text-sm text-center bg-gray-400 rounded-md">
             {props.task.state}
           </p>
         </div>

@@ -57,7 +57,7 @@ const UserDashboard = () => {
     });
   }, [userDetails]);
   return (
-    <div className="p-3 w-full">
+    <div className="p-3 w-full h-full">
       <div>
         <Header />
       </div>
@@ -83,13 +83,13 @@ const UserDashboard = () => {
           styles={{ background: "#f8333c" }}
         />
       </div>
-      <div className="w-full bg-gray-300 text-black px-3 py-2 flex justify-between rounded-md">
+      <div className="w-full bg-gray-300 text-black px-5 outline-none py-1 md:py-2 flex gap-2 mb-2 justify-end rounded-md">
         <label htmlFor="sortBy">Sort by :</label>
         <select
           name=""
           id="sortBy"
           value={sortBy}
-          className="bg-transparent"
+          className="bg-transparent border-2 border-black rounded-sm text-sm"
           onChange={(e) => setSortBy(e.target.value)}
         >
           <option value="all"> ALL</option>
@@ -100,7 +100,7 @@ const UserDashboard = () => {
           <option value="completed"> Completed tasks</option>
         </select>
       </div>
-      <div className="flex flex-col p-3 gap-2 overflow-auto h-80">
+      <div className="flex flex-col p-3 gap-2 overflow-auto h-[58%]">
         {
           // userDetails && userDetails.tasks.map((task)=>{
           userTasks.map((task) => {

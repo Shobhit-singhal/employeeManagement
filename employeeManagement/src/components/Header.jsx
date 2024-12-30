@@ -8,7 +8,7 @@ const Header = () => {
     setUserDetails('');
   }
   return (
-    <div className='flex justify-between items-center bg-gray-500 px-5 py-3'>
+    <div className='flex justify-between items-center bg-gray-500 px-5 py-2'>
       <div className='flex flex-col items-start justify-start'>
         <h3>Hello,</h3>
         <h2 className='font-bold text-lg'>{userDetails.firstName}🙌</h2>

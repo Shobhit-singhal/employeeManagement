@@ -23,7 +23,8 @@ const Login = () => {
 
       <form
         onSubmit={handleSubmit}
-        className="p-28 border-2 rounded-xl border-emerald-600 flex flex-col gap-5 justify-center items-center"
+        className="p-10 border-2 md:w-1/2
+         rounded-xl md:p-20 border-emerald-600 flex flex-col gap-5 justify-center items-center"
       >
         <div className="flex flex-col items-start w-full">
           <label htmlFor="emailInput">Enter Email:</label>

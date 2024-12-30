@@ -111,8 +111,8 @@ const AdminDashboard = () => {
       <div>
         <Header />
       </div>
-      <form className="bg-gray-800 flex " onSubmit={handleCreteTask}>
-        <div className="w-1/2 p-3 flex flex-col gap-2">
+      <form className="bg-gray-800 flex flex-col md:flex-row" onSubmit={handleCreteTask}>
+        <div className="w-full md:w-1/2 md:mb-3 px-3 mt-3 flex flex-col gap-2">
           <div className="flex flex-col ">
             <label htmlFor="taskTitle">Task Title:</label>
             <input required
@@ -153,7 +153,7 @@ const AdminDashboard = () => {
             />
           </div>
         </div>
-        <div className="w-1/2 p-3 flex flex-col">
+        <div className="md:w-1/2 px-3 mb-3 flex flex-col h-3/4 md:h-auto">
           <label htmlFor="description">Description</label>
           <textarea required
             name=""
@@ -169,9 +169,9 @@ const AdminDashboard = () => {
           />
         </div>
       </form>
-      <div className="w-full bg-gray-300 text-black px-3 py-2 flex justify-between rounded-md">
+      <div className="w-full bg-gray-300 text-black px-5 outline-none py-1 md:py-2 flex gap-2 mb-2 justify-end rounded-md">
         Sort by : 
-        <select name="" id="" value={sortBy} className="bg-transparent"
+        <select name="" id="" value={sortBy} className="bg-transparent border-2 border-black rounded-sm text-sm"
         onChange={(e)=>setSortBy(e.target.value)}
         >
           <option value="employeeId"> Employee ID</option>
@@ -184,7 +184,7 @@ const AdminDashboard = () => {
       </div>
       {
         loading?"":(
-          <div className="flex flex-col gap-2 mt-3 overflow-auto h-[280px]">
+          <div className="flex flex-col gap-2 mt-3 overflow-auto h-1/4 md:h-[39%]">
             {
               allTask.map((task,index)=>(
                 <TaskInfo task={task} key={index} setOpened={setOpened} opened={opened}/>
