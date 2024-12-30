@@ -4,7 +4,6 @@ import AdminDashboard from "./components/AdminDashboard";
 import Login from "./components/Login";
 import UserDashboard from "./components/UserDashboard";
 import { useUserContext } from "./context/UserProvider";
-import Exp from "./components/exp";
 
 function App() {
   const {user,userDetails}=useUserContext();
