@@ -26,10 +26,10 @@ const UserDashboard = () => {
       </div>
       <div className='flex flex-wrap p-3 gap-2 justify-center'>
         
-        <TaaskStats for ='New Tasks' val={stats.newTask} styles={{background:"#facc15",}}/>
-        <TaaskStats for ='Active Tasks' val={stats.Active} styles={{background:"#4444ef",}}/>
-        <TaaskStats for ='Completed Tasks' val={stats.Completed}styles={{background:"#44ef44",}}/>
-        <TaaskStats for ='Failed Tasks' val={stats.Failed }styles={{background:"#ef4444",}}/>
+        <TaaskStats for ='New Tasks' val={stats.newTask} styles={{background:"#fcab10",}}/>
+        <TaaskStats for ='Active Tasks' val={stats.Active} styles={{background:"#2b9eb3",}}/>
+        <TaaskStats for ='Completed Tasks' val={stats.Completed}styles={{background:"#44af69",}}/>
+        <TaaskStats for ='Failed Tasks' val={stats.Failed }styles={{background:"#f8333c",}}/>
       </div>
       <div className='flex flex-col p-3 gap-2 overflow-auto h-80'>
         {

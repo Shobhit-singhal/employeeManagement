@@ -30,6 +30,7 @@ body {
   justify-content: center;
   min-width: 320px;
   min-height: 100vh;
+  background-color: #242423;
 }
 div::-webkit-scrollbar{
   display: none;

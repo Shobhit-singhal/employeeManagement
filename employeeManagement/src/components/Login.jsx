@@ -28,7 +28,7 @@ const Login = () => {
       >
         <div className="flex flex-col items-start w-full">
           <label htmlFor="emailInput">Enter Email:</label>
-          <input
+          <input required
             className="rounded border-2 border-emerald-500 px-3 py-2 w-full"
             type="email"
             id="emailInput"
@@ -41,7 +41,7 @@ const Login = () => {
         </div>
         <div className="flex flex-col items-start w-full ">
           <label htmlFor="passInput">Enter Password:</label>
-          <input
+          <input required
             className=" px-2 py-2 w-full rounded border-2 border-emerald-500"
             type="password"
             id="passInput"

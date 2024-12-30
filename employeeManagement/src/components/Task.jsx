@@ -4,13 +4,13 @@ import { useUserContext } from "../context/UserProvider";
 
 export const getColor = (state) => {
   if (state === "active") {
-    return "#4444ef";
+    return "#2b9eb3";
   } else if (state === "completed") {
-    return "#44ef44";
+    return "#44af69";
   } else if (state === "failed") {
-    return "#ef4444";
+    return "#f8333c";
   } else {
-    return "#facc15";
+    return "#fcab10";
   }
 };
 
